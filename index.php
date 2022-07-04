@@ -2,12 +2,12 @@
 
 function __autoload($classname)
 {
-     require_once(__DIR__ . '\\' . $classname . '.php');   
+     require_once(__DIR__ . "\\" . $classname . '.php');   
 }
 
 
-require_once(__DIR__ . '\Constants\constant.php');
-require_once(__DIR__ . '\Functions\function.php');
+require_once(__DIR__ . '\Constants\VERSION.php');
+require_once(__DIR__ . '\Functions\Function.php');
 
 $user = new \Classes\User(
         'alex@ukr.net',
