@@ -1,9 +1,6 @@
 <?php 
 
-function __autoload($classname)
-{
-     require_once(__DIR__ . "\\" . $classname . '.php');   
-}
+spl_autoload_register();
 
 
 require_once(__DIR__ . '\Constants\VERSION.php');
